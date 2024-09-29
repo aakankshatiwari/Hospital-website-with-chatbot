@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Services by AT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Header and Hero Section */
+        header {
+            background-color: #2b7a78;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .hero {
+            background-image: url('https://www.linktoyourimage.com/hospital.jpg'); /* Replace with a relevant healthcare image */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .cta-buttons a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #3aafa9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #2b7a78;
+        }
+
+        .content-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .service-box h3 {
+            color: #3aafa9;
+            margin-top: 0;
+        }
+
+        .service-box p {
+            font-size: 1.1em;
+            color: #555555;
+        }
+
+        .service-box a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #3aafa9;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Contact Section */
+        footer {
+            background-color: #2b7a78;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons img {
+            width: 30px;
+            margin: 0 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Hero Section -->
+    <header>
+        <h1>Health Services by AT</h1>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h2>Expert Healthcare Solutions at Your Fingertips</h2>
+            <div class="cta-buttons">
+                <a href="#book-appointment">Book Doctor Appointment</a>
+                <a href="#emergency">Emergency Services</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Healthcare Services Section -->
+        <section id="services">
+            <h2 class="section-title">Our Healthcare Services</h2>
+            <div class="content-section">
+                <!-- Book Doctor Appointment -->
+                <div class="service-box" id="book-appointment">
+                    <h3>Book Doctor Appointment</h3>
+                    <p>Our specialized doctors are available at convenient timings to meet your health needs:</p>
+                    <ul>
+                        <li><strong>Bone Specialist</strong> (Orthopedic): 9 AM – 10 AM</li>
+                        <li><strong>Skin Specialist</strong> (Dermatologist): 10 AM – 11 AM</li>
+                        <li><strong>Eye Specialist</strong> (Ophthalmologist): 1 PM – 2 PM</li>
+                        <li><strong>Dentist</strong> (Dental Care): 2 PM – 4 PM</li>
+                        <li><strong>Nutritionist</strong> (Diet & Wellness): 4 PM – 5 PM</li>
+                        <li><strong>Physiotherapist</strong> (Rehabilitation): 5 PM – 6 PM</li>
+                    </ul>
+                    <a href="#book-form">Schedule Your Appointment Now</a>
+                </div>
+
+                <!-- Emergency Services -->
+                <div class="service-box" id="emergency">
+                    <h3>Emergency Services</h3>
+                    <p>In case of emergencies, we offer 24/7 ambulance services to get you the help you need. Provide your location, and our team will dispatch an ambulance immediately.</p>
+                    <a href="#emergency-form">Request Ambulance Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot Section -->
+    <section id="chatbot" style="text-align:center; margin: 50px 0;">
+        <h2 class="section-title">Need Assistance? Chat with Us!</h2>
+        <iframe height="430" width="350" src="https://bot.dialogflow.com/af1eaef2-b740-4af3-b973-b99244a64788"></iframe>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact Us: +91 9521304991 | info@healthservicesbyat.com</p>
+        <p>Location: Alwar, Rajasthan</p>
+        <div class="social-icons">
+            <a href="https://facebook.com"><img src="https://image.shutterstock.com/image-vector/facebook-icon-260nw-1913706724.jpg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="https://image.shutterstock.com/image-vector/twitter-icon-260nw-1913706724.jpg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="https://image.shutterstock.com/image-vector/instagram-icon-260nw-1913706724.jpg" alt="Instagram"></a>
+        </div>
+        <p>© 2024 Health Services by AT - Your Health, Our Priority</p>
+    </footer>
+</body>
+</html>
